@@ -2,34 +2,30 @@
 <html lang="en" data-bs-theme="dark">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Arabic Letters Reordered</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
   <style>
     a {
-      color: #599D36;
+      color: #599d36;
       text-decoration: none;
       font-weight: 500;
-      margin-bottom: 10px;
+      margin-bottom: 10px
     }
 
     td span {
-      margin-bottom: 10px;
+      margin-bottom: 10px
     }
 
     .arabic-letter {
       font-size: 45px;
-      /* Ensure Arabic letters are 22px */
-      direction: rtl;
-      /* Right-to-left rendering */
+      direction: rtl
     }
 
-    /* Example styling for the transliteration class: */
     .transliteration {
-      font-style: italic;
-      /* or any style you prefer */
+      font-style: italic
     }
   </style>
 </head>
@@ -37,258 +33,179 @@
 <body>
   <div class="navbar navbar-dark bg-dark shadow-sm">
     <div class="container">
-      <a href="#" class="navbar-brand d-flex align-items-center">
-        <!-- Save this as 'allah.svg' or simply copy into an inline <svg> in HTML -->
-          Arabic Letters
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" href="#toggleTransiliteration"
-        role="button" aria-controls="toggleTransiliteration" aria-label="Toggle navigation">
+      <a href="#" class="navbar-brand d-flex align-items-center">Arabic Letters</a><button class="navbar-toggler"
+        type="button" data-bs-toggle="offcanvas" href="#toggleTransiliteration" role="button"
+        aria-controls="toggleTransiliteration" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
     </div>
   </div>
   <div class="container">
     <table class="table table-striped">
-      <!-- Row 1: أ, ب, ت -->
       <tr>
         <td>
-          <a href="javascript:playSound('https://www.madinaharabic.com/Audios/L000/L000_005.mp3');">
-            <span class="arabic-letter">أ</span>
-          </a><br />
-          <span class="transliteration">/Alif/un/</span><br />
-          <span>a</span>
+          <a href="javascript:playSound('https://www.madinaharabic.com/Audios/L000/L000_005.mp3');"><span
+              class="arabic-letter">أ</span></a><br /><span class="transliteration">/Alif/un/</span><br /><span
+            class="latin-letter">a</span>
         </td>
         <td>
-          <a href="javascript:playSound('https://www.madinaharabic.com/Audios/L000/L000_004.mp3');">
-            <span class="arabic-letter">ب</span>
-          </a><br />
-          <span class="transliteration">/Bā’/un/</span><br />
-          <span>B</span>
+          <a href="javascript:playSound('https://www.madinaharabic.com/Audios/L000/L000_004.mp3');"><span
+              class="arabic-letter">ب</span></a><br /><span class="transliteration">/Bā’/un/</span><br /><span
+            class="latin-letter">B</span>
         </td>
         <td>
-          <a href="javascript:playSound('https://www.madinaharabic.com/Audios/L000/L000_003.mp3');">
-            <span class="arabic-letter">ت</span>
-          </a><br />
-          <span class="transliteration">/Tā’/un/</span><br />
-          <span>T</span>
+          <a href="javascript:playSound('https://www.madinaharabic.com/Audios/L000/L000_003.mp3');"><span
+              class="arabic-letter">ت</span></a><br /><span class="transliteration">/Tā’/un/</span><br /><span
+            class="latin-letter">T</span>
         </td>
       </tr>
-
-      <!-- Row 2: ث, ج, ح -->
       <tr>
         <td>
-          <a href="javascript:playSound('https://www.madinaharabic.com/Audios/L000/L000_002.mp3');">
-            <span class="arabic-letter">ث</span>
-          </a><br />
-          <span class="transliteration">/Thā’/un/</span><br />
-          <span>Th</span>
+          <a href="javascript:playSound('https://www.madinaharabic.com/Audios/L000/L000_002.mp3');"><span
+              class="arabic-letter">ث</span></a><br /><span class="transliteration">/Thā’/un/</span><br /><span
+            class="latin-letter">Th</span>
         </td>
         <td>
-          <a href="javascript:playSound('https://www.madinaharabic.com/Audios/L000/L000_001.mp3');">
-            <span class="arabic-letter">ج</span>
-          </a><br />
-          <span class="transliteration">/dʒīm/un/</span><br />
-          <span>J</span>
+          <a href="javascript:playSound('https://www.madinaharabic.com/Audios/L000/L000_001.mp3');"><span
+              class="arabic-letter">ج</span></a><br /><span class="transliteration">/dʒīm/un/</span><br /><span
+            class="latin-letter">J</span>
         </td>
         <td>
-          <a href="javascript:playSound('https://www.madinaharabic.com/Audios/L000/L000_010.mp3');">
-            <span class="arabic-letter">ح</span>
-          </a><br />
-          <span class="transliteration">/ħā’/un/</span><br />
-          <span>h</span>
+          <a href="javascript:playSound('https://www.madinaharabic.com/Audios/L000/L000_010.mp3');"><span
+              class="arabic-letter">ح</span></a><br /><span class="transliteration">/ħā’/un/</span><br /><span
+            class="latin-letter">h</span>
         </td>
       </tr>
-
-      <!-- Row 3: خ, د, ذ -->
       <tr>
         <td>
-          <a href="javascript:playSound('https://www.madinaharabic.com/Audios/L000/L000_009.mp3');">
-            <span class="arabic-letter">خ</span>
-          </a><br />
-          <span class="transliteration">/Khâ’/un/</span><br />
-          <span>Kh</span>
+          <a href="javascript:playSound('https://www.madinaharabic.com/Audios/L000/L000_009.mp3');"><span
+              class="arabic-letter">خ</span></a><br /><span class="transliteration">/Khâ’/un/</span><br /><span
+            class="latin-letter">Kh</span>
         </td>
         <td>
-          <a href="javascript:playSound('https://www.madinaharabic.com/Audios/L000/L000_008.mp3');">
-            <span class="arabic-letter">د</span>
-          </a><br />
-          <span class="transliteration">/Dāl/un/</span><br />
-          <span>D</span>
+          <a href="javascript:playSound('https://www.madinaharabic.com/Audios/L000/L000_008.mp3');"><span
+              class="arabic-letter">د</span></a><br /><span class="transliteration">/Dāl/un/</span><br /><span
+            class="latin-letter">D</span>
         </td>
         <td>
-          <a href="javascript:playSound('https://www.madinaharabic.com/Audios/L000/L000_007.mp3');">
-            <span class="arabic-letter">ذ</span>
-          </a><br />
-          <span class="transliteration">/Dhāl/un/</span><br />
-          <span>Dh</span>
+          <a href="javascript:playSound('https://www.madinaharabic.com/Audios/L000/L000_007.mp3');"><span
+              class="arabic-letter">ذ</span></a><br /><span class="transliteration">/Dhāl/un/</span><br /><span
+            class="latin-letter">Dh</span>
         </td>
       </tr>
-
-      <!-- Row 4: ر, ز, س -->
       <tr>
         <td>
-          <a href="javascript:playSound('https://www.madinaharabic.com/Audios/L000/L000_006.mp3');">
-            <span class="arabic-letter">ر</span>
-          </a><br />
-          <span class="transliteration">/Râ’/un/</span><br />
-          <span>R</span>
+          <a href="javascript:playSound('https://www.madinaharabic.com/Audios/L000/L000_006.mp3');"><span
+              class="arabic-letter">ر</span></a><br /><span class="transliteration">/Râ’/un/</span><br /><span
+            class="latin-letter">R</span>
         </td>
         <td>
-          <a href="javascript:playSound('https://www.madinaharabic.com/Audios/L000/L000_015.mp3');">
-            <span class="arabic-letter">ز</span>
-          </a><br />
-          <span class="transliteration">/Zāy/un/</span><br />
-          <span>Z</span>
+          <a href="javascript:playSound('https://www.madinaharabic.com/Audios/L000/L000_015.mp3');"><span
+              class="arabic-letter">ز</span></a><br /><span class="transliteration">/Zāy/un/</span><br /><span
+            class="latin-letter">Z</span>
         </td>
         <td>
-          <a href="javascript:playSound('https://www.madinaharabic.com/Audios/L000/L000_014.mp3');">
-            <span class="arabic-letter">س</span>
-          </a><br />
-          <span class="transliteration">/Sīn/un/</span><br />
-          <span>S</span>
+          <a href="javascript:playSound('https://www.madinaharabic.com/Audios/L000/L000_014.mp3');"><span
+              class="arabic-letter">س</span></a><br /><span class="transliteration">/Sīn/un/</span><br /><span
+            class="latin-letter">S</span>
         </td>
       </tr>
-
-      <!-- Row 5: ش, ص, ض -->
       <tr>
         <td>
-          <a href="javascript:playSound('https://www.madinaharabic.com/Audios/L000/L000_013.mp3');">
-            <span class="arabic-letter">ش</span>
-          </a><br />
-          <span class="transliteration">/Shīn/un/</span><br />
-          <span>Sh</span>
+          <a href="javascript:playSound('https://www.madinaharabic.com/Audios/L000/L000_013.mp3');"><span
+              class="arabic-letter">ش</span></a><br /><span class="transliteration">/Shīn/un/</span><br /><span
+            class="latin-letter">Sh</span>
         </td>
         <td>
-          <a href="javascript:playSound('https://www.madinaharabic.com/Audios/L000/L000_012.mp3');">
-            <span class="arabic-letter">ص</span>
-          </a><br />
-          <span class="transliteration">/ŝâd/un/</span><br />
-          <span>S</span>
+          <a href="javascript:playSound('https://www.madinaharabic.com/Audios/L000/L000_012.mp3');"><span
+              class="arabic-letter">ص</span></a><br /><span class="transliteration">/ŝâd/un/</span><br /><span
+            class="latin-letter">S</span>
         </td>
         <td>
-          <a href="javascript:playSound('https://www.madinaharabic.com/Audios/L000/L000_011.mp3');">
-            <span class="arabic-letter">ض</span>
-          </a><br />
-          <span class="transliteration">/ḍâd/un/</span><br />
-          <span>D</span>
+          <a href="javascript:playSound('https://www.madinaharabic.com/Audios/L000/L000_011.mp3');"><span
+              class="arabic-letter">ض</span></a><br /><span class="transliteration">/ḍâd/un/</span><br /><span
+            class="latin-letter">D</span>
         </td>
       </tr>
-
-      <!-- Row 6: ط, ظ, ع -->
       <tr>
         <td>
-          <a href="javascript:playSound('https://www.madinaharabic.com/Audios/L000/L000_020.mp3');">
-            <span class="arabic-letter">ط</span>
-          </a><br />
-          <span class="transliteration">/ṱâ’/un/</span><br />
-          <span>T</span>
+          <a href="javascript:playSound('https://www.madinaharabic.com/Audios/L000/L000_020.mp3');"><span
+              class="arabic-letter">ط</span></a><br /><span class="transliteration">/ṱâ’/un/</span><br /><span
+            class="latin-letter">T</span>
         </td>
         <td>
-          <a href="javascript:playSound('https://www.madinaharabic.com/Audios/L000/L000_019.mp3');">
-            <span class="arabic-letter">ظ</span>
-          </a><br />
-          <span class="transliteration">/ḍhâ’/un/</span><br />
-          <span>Z</span>
+          <a href="javascript:playSound('https://www.madinaharabic.com/Audios/L000/L000_019.mp3');"><span
+              class="arabic-letter">ظ</span></a><br /><span class="transliteration">/ḍhâ’/un/</span><br /><span
+            class="latin-letter">Z</span>
         </td>
         <td>
-          <a href="javascript:playSound('https://www.madinaharabic.com/Audios/L000/L000_018.mp3');">
-            <span class="arabic-letter">ع</span>
-          </a><br />
-          <span class="transliteration">/ξayn/un/</span><br />
-          <span>`</span>
+          <a href="javascript:playSound('https://www.madinaharabic.com/Audios/L000/L000_018.mp3');"><span
+              class="arabic-letter">ع</span></a><br /><span class="transliteration">/ξayn/un/</span><br /><span
+            class="latin-letter">`</span>
         </td>
       </tr>
-
-      <!-- Row 7: غ, ف, ق -->
       <tr>
         <td>
-          <a href="javascript:playSound('https://www.madinaharabic.com/Audios/L000/L000_017.mp3');">
-            <span class="arabic-letter">غ</span>
-          </a><br />
-          <span class="transliteration">/Ghayn/un/</span><br />
-          <span>Gh</span>
+          <a href="javascript:playSound('https://www.madinaharabic.com/Audios/L000/L000_017.mp3');"><span
+              class="arabic-letter">غ</span></a><br /><span class="transliteration">/Ghayn/un/</span><br /><span
+            class="latin-letter">Gh</span>
         </td>
         <td>
-          <a href="javascript:playSound('https://www.madinaharabic.com/Audios/L000/L000_016.mp3');">
-            <span class="arabic-letter">ف</span>
-          </a><br />
-          <span class="transliteration">/Fā’/un/</span><br />
-          <span>F</span>
+          <a href="javascript:playSound('https://www.madinaharabic.com/Audios/L000/L000_016.mp3');"><span
+              class="arabic-letter">ف</span></a><br /><span class="transliteration">/Fā’/un/</span><br /><span
+            class="latin-letter">F</span>
         </td>
         <td>
-          <a href="javascript:playSound('https://www.madinaharabic.com/Audios/L000/L000_025.mp3');">
-            <span class="arabic-letter">ق</span>
-          </a><br />
-          <span class="transliteration">/Qâf/un/</span><br />
-          <span>q</span>
+          <a href="javascript:playSound('https://www.madinaharabic.com/Audios/L000/L000_025.mp3');"><span
+              class="arabic-letter">ق</span></a><br /><span class="transliteration">/Qâf/un/</span><br /><span
+            class="latin-letter">q</span>
         </td>
       </tr>
-
-      <!-- Row 8: ك, ل, م -->
       <tr>
         <td>
-          <a href="javascript:playSound('https://www.madinaharabic.com/Audios/L000/L000_024.mp3');">
-            <span class="arabic-letter">ك</span>
-          </a><br />
-          <span class="transliteration">/Kāf/un/</span><br />
-          <span>K</span>
+          <a href="javascript:playSound('https://www.madinaharabic.com/Audios/L000/L000_024.mp3');"><span
+              class="arabic-letter">ك</span></a><br /><span class="transliteration">/Kāf/un/</span><br /><span
+            class="latin-letter">K</span>
         </td>
         <td>
-          <a href="javascript:playSound('https://www.madinaharabic.com/Audios/L000/L000_023.mp3');">
-            <span class="arabic-letter">ل</span>
-          </a><br />
-          <span class="transliteration">/Lām/un/</span><br />
-          <span>L</span>
+          <a href="javascript:playSound('https://www.madinaharabic.com/Audios/L000/L000_023.mp3');"><span
+              class="arabic-letter">ل</span></a><br /><span class="transliteration">/Lām/un/</span><br /><span
+            class="latin-letter">L</span>
         </td>
         <td>
-          <a href="javascript:playSound('https://www.madinaharabic.com/Audios/L000/L000_022.mp3');">
-            <span class="arabic-letter">م</span>
-          </a><br />
-          <span class="transliteration">/Mīm/un/</span><br />
-          <span>M</span>
+          <a href="javascript:playSound('https://www.madinaharabic.com/Audios/L000/L000_022.mp3');"><span
+              class="arabic-letter">م</span></a><br /><span class="transliteration">/Mīm/un/</span><br /><span
+            class="latin-letter">M</span>
         </td>
       </tr>
-
-      <!-- Row 9: ن, هـ, و -->
       <tr>
         <td>
-          <a href="javascript:playSound('https://www.madinaharabic.com/Audios/L000/L000_021.mp3');">
-            <span class="arabic-letter">ن</span>
-          </a><br />
-          <span class="transliteration">/Nūn/un/</span><br />
-          <span>N</span>
+          <a href="javascript:playSound('https://www.madinaharabic.com/Audios/L000/L000_021.mp3');"><span
+              class="arabic-letter">ن</span></a><br /><span class="transliteration">/Nūn/un/</span><br /><span
+            class="latin-letter">N</span>
         </td>
         <td>
-          <a href="javascript:playSound('https://www.madinaharabic.com/Audios/L000/L000_028.mp3');">
-            <span class="arabic-letter">هـ</span>
-          </a><br />
-          <span class="transliteration">/Hā’/un/</span><br />
-          <span>h</span>
+          <a href="javascript:playSound('https://www.madinaharabic.com/Audios/L000/L000_028.mp3');"><span
+              class="arabic-letter">هـ</span></a><br /><span class="transliteration">/Hā’/un/</span><br /><span
+            class="latin-letter">h</span>
         </td>
         <td>
-          <a href="javascript:playSound('https://www.madinaharabic.com/Audios/L000/L000_027.mp3');">
-            <span class="arabic-letter">و</span>
-          </a><br />
-          <span class="transliteration">/Wāw/un/</span><br />
-          <span>w</span>
+          <a href="javascript:playSound('https://www.madinaharabic.com/Audios/L000/L000_027.mp3');"><span
+              class="arabic-letter">و</span></a><br /><span class="transliteration">/Wāw/un/</span><br /><span
+            class="latin-letter">w</span>
         </td>
       </tr>
-
-      <!-- Row 10: ي -->
       <tr>
         <td>
-          <a href="javascript:playSound('https://www.madinaharabic.com/Audios/L000/L000_026.mp3');">
-            <span class="arabic-letter">ي</span>
-          </a><br />
-          <span class="transliteration">/Yā’/un/</span><br />
-          <span>Y</span>
+          <a href="javascript:playSound('https://www.madinaharabic.com/Audios/L000/L000_026.mp3');"><span
+              class="arabic-letter">ي</span></a><br /><span class="transliteration">/Yā’/un/</span><br /><span
+            class="latin-letter">Y</span>
         </td>
         <td></td>
         <td></td>
       </tr>
     </table>
   </div>
-
   <div class="offcanvas offcanvas-start" tabindex="-1" id="toggleTransiliteration"
     aria-labelledby="toggleTransiliterationLabel">
     <div class="offcanvas-header">
@@ -296,18 +213,14 @@
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body">
-      <div>
-        Hide the transiliteration
-      </div>
+      <div>Hide the transiliteration</div>
       <div class="dropdown mt-3">
-        <button id="toggleTransiliterationBTN" type="button" class="btn btn-secondary"
-          onclick="hideTransiliteration();">Hide</button>
+        <button id="toggleTransiliterationBTN" type="button" class="btn btn-secondary" onclick="hideTransiliteration()">
+          Hide
+        </button>
       </div>
     </div>
   </div>
-
-  <!-- Optional Bootstrap JS -->
-  <!-- MA javascript -->
   <script type="text/javascript">
     ! function (e, a, t, n, g, c, o) {
       e.GoogleAnalyticsObject = g, e.ga = e.ga || function () {
@@ -521,7 +434,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
   </script>
-
   <script>
     function hideTransiliteration() {
       const button = document.getElementById('toggleTransiliterationBTN');
@@ -532,10 +444,18 @@
         document.querySelectorAll('.transliteration').forEach(element => {
           element.style.display = 'none';
         });
+        document.querySelectorAll('.latin-letter').forEach(element => {
+          element.style.display = 'none';
+        });
+        
         button.innerHTML = "Show";
       } else {
         // Remove inline "display" property to show them again
         document.querySelectorAll('.transliteration').forEach(element => {
+          element.style.removeProperty('display');
+        });
+
+        document.querySelectorAll('.latin-letter').forEach(element => {
           element.style.removeProperty('display');
         });
         button.innerHTML = "Hide";
