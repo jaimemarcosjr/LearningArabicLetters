@@ -1,0 +1,27 @@
+a {
+    color: #599d36;
+    text-decoration: none;
+    font-weight: 500;
+    margin-bottom: 10px
+}
+
+td span {
+    margin-bottom: 10px
+}
+
+.arabic-letter {
+    font-size: 45px;
+    direction: rtl
+}
+
+.transliteration {
+    font-style: italic
+}
+
+.row>div {
+    text-align: center;
+}
+
+#nav a{
+    color: white;
+}

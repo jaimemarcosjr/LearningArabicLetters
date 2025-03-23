@@ -1,0 +1,106 @@
+---
+title: Learning Arabic
+---
+
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Learning Arabic - {{ title }}</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container">
+            <a href="#" class="navbar-brand d-flex align-items-center">Arabic Letters</a><button class="navbar-toggler"
+                type="button" data-bs-toggle="offcanvas" href="#toggleTransiliteration" role="button"
+                aria-controls="toggleTransiliteration" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </div>
+  {{ content | safe }}
+
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="toggleTransiliteration"
+    aria-labelledby="toggleTransiliterationLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="toggleTransiliterationLabel">Menu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <section id="nav">
+            <h4>Navigation</h4>
+            <div class="mt-3 row">
+                <a class="col-12" href="/">Letters</a>
+                <a class="col-12" href="/short-vowel-marks-fathah">Short Vowel Marks - fatħah</a>
+                <a class="col-12" href="/short-vowel-marks-kasrah">Short Vowel Marks - kasrah</a>
+                <a class="col-12" href="/short-vowel-marks-dammah">Short Vowel Marks - ḍammah</a>
+            </div>
+        </section>
+        <section id="action" class="mt-3">
+            <h4>Actions</h4>
+            {{ action | safe }}
+        </section>
+    </div>
+</div>
+  <script src="/js/audio.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+  </script>
+  <script>
+    // Function to shuffle array elements
+    function shuffleArray(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+      return array;
+    }
+
+    function randomizeLetters(){
+      const row = document.querySelector(".row");
+      const cols = Array.from(row.querySelectorAll(".col-4"));
+      const shuffled = shuffleArray(cols);
+
+      // Remove current columns
+      cols.forEach(col => row.removeChild(col));
+
+      // Append shuffled columns back
+      shuffled.forEach(col => row.appendChild(col));
+    }
+    function hideTransiliteration() {
+      const button = document.getElementById('toggleTransiliterationBTN');
+      const currentText = button.innerHTML.trim();
+
+      if (currentText === "Hide Transliteration") {
+        // Hide elements with class "transliteration"
+        document.querySelectorAll('.transliteration').forEach(element => {
+          element.style.display = 'none';
+        });
+        document.querySelectorAll('.latin-letter').forEach(element => {
+          element.style.display = 'none';
+        });
+
+        button.innerHTML = "Show Transliteration";
+      } else {
+        // Remove inline "display" property to show them again
+        document.querySelectorAll('.transliteration').forEach(element => {
+          element.style.removeProperty('display');
+        });
+
+        document.querySelectorAll('.latin-letter').forEach(element => {
+          element.style.removeProperty('display');
+        });
+        button.innerHTML = "Hide Transliteration";
+      }
+    }
+  </script>
+
+</body>
+
+</html>
