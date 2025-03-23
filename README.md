@@ -1,0 +1,34 @@
+Sure! Here's a simple and clear `README.md` template tailored for a project using [Eleventy (11ty)](https://www.11ty.dev/):
+
+---
+
+```markdown
+# Eleventy Static Site
+
+This is a static site built with [Eleventy (11ty)](https://www.11ty.dev/), a simpler static site generator written in JavaScript.
+
+## 🚀 Project Setup
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Run the Development Server
+
+```bash
+npx eleventy --serve
+```
+
+Your site will be available at `http://localhost:8080`.
+
+### Build for Production
+
+```bash
+npx eleventy
+```
+
+Output will be in the `_site` directory by default.
+
+---
