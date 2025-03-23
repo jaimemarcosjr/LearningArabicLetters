@@ -1,9 +1,5 @@
-Sure! Here's a simple and clear `README.md` template tailored for a project using [Eleventy (11ty)](https://www.11ty.dev/):
-
----
-
 ```markdown
-# Eleventy Static Site
+# Learning Arabic Letters
 
 This is a static site built with [Eleventy (11ty)](https://www.11ty.dev/), a simpler static site generator written in JavaScript.
 
