@@ -199,3 +199,53 @@ function MA_List_Focus() {
     let e = document.querySelector(".masel");
     e && (e = e.parentElement.parentElement.previousElementSibling) && e.scrollIntoView()
 }
+
+
+
+// Function to shuffle array elements
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
+
+function randomizeLetters() {
+    const row = document.querySelector(".row");
+    const cols = Array.from(row.querySelectorAll(".col-4"));
+    const shuffled = shuffleArray(cols);
+
+    // Remove current columns
+    cols.forEach(col => row.removeChild(col));
+
+    // Append shuffled columns back
+    shuffled.forEach(col => row.appendChild(col));
+}
+
+function hideTransiliteration() {
+    const button = document.getElementById('toggleTransiliterationBTN');
+    const currentText = button.innerHTML.trim();
+
+    if (currentText === "Hide Transliteration") {
+        // Hide elements with class "transliteration"
+        document.querySelectorAll('.transliteration').forEach(element => {
+            element.style.display = 'none';
+        });
+        document.querySelectorAll('.latin-letter').forEach(element => {
+            element.style.display = 'none';
+        });
+
+        button.innerHTML = "Show Transliteration";
+    } else {
+        // Remove inline "display" property to show them again
+        document.querySelectorAll('.transliteration').forEach(element => {
+            element.style.removeProperty('display');
+        });
+
+        document.querySelectorAll('.latin-letter').forEach(element => {
+            element.style.removeProperty('display');
+        });
+        button.innerHTML = "Hide Transliteration";
+    }
+}
