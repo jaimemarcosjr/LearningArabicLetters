@@ -3,7 +3,7 @@
 
 This is a static site built with [Eleventy (11ty)](https://www.11ty.dev/), a simpler static site generator written in JavaScript.
 
-## 🚀 Project Setup
+## Project Setup
 
 ### Install Dependencies
 
